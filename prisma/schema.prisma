@@ -21,7 +21,7 @@ model Product {
   price             Float
   image             String[]
   category          String
-  stock             Int
+  stock             Int             @default(0)
   createdAt         DateTime        @default(now())
 
   Cart              Cart[]
